@@ -31,3 +31,13 @@ $app->get('/holaMundoNikolaLuxember', function () use ($app) {
     ];
     echo $helper->checkCode($data);
 });
+$app->get('/holaMundoEulicer', function () use ($app) {
+
+    $helper = new helper();
+    $data = [
+        'status'=>'exitoso',
+        'code' => '000',
+        'msg' => 'Hola mundo, EULICER'
+    ];
+    echo $helper->checkCode($data);
+});$app->
