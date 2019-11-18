@@ -5,4 +5,5 @@ RUN docker-php-ext-install mysqli
 
 COPY git/botDroid/ /var/www/html
 
+
 EXPOSE 80
