@@ -5,7 +5,7 @@ $app->get('/holaMundo', function () use ($app) {
     $data = [
         'status'=>'exitoso',
         'code' => '000',
-        'msg' => 'Hola mundo'
+        'msg' => 'Hola mundo 123'
     ];
     echo $helper->checkCode($data);
 });
@@ -20,7 +20,7 @@ $app->get('/holaMundoNelson', function () use ($app) {
     ];
     echo $helper->checkCode($data);
 });
- 
+
 $app->get('/holaMundoNikolaLuxember', function () use ($app) {
 
     $helper = new helper();
