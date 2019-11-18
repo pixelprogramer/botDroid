@@ -40,4 +40,4 @@ $app->get('/holaMundoEulicer', function () use ($app) {
         'msg' => 'Hola mundo, EULICER'
     ];
     echo $helper->checkCode($data);
-});
+}); 
