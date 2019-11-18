@@ -31,4 +31,5 @@ require 'vendor/tecnickcom/tcpdf/examples/tcpdf_include.php';
 
 //Componentes
 require 'App/componentes/holaMundo.php';
+require 'App/componentes/jenkins.php';
 $app->run();
