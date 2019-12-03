@@ -5,7 +5,7 @@ $app->get('/pruebaJenkins', function () use ($app) {
     $data = [
         'status'=>'exitoso',
         'code' => '000',
-        'msg' => 'Esto es una prueba de Jenkins  --- pruyeba 1  sd'
+        'msg' => 'Esto es una prueba de la semana 7 y 8'
     ];
     echo $helper->checkCode($data);
 });

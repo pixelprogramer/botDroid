@@ -10,9 +10,6 @@ before_install:
 
 script:
   - composer install
-  - php vendor/bin/codecept run unit --coverage
-  - php vendor/bin/codecept run functional --coverage
-  - php vendor/bin/codecept run acceptance
 
 cache:
   directories:
