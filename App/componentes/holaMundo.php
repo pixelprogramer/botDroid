@@ -6,7 +6,7 @@ $app->get('/holaMundo', function () use ($app) {
     $data = [
         'status'=>'exitoso',
         'code' => '000',
-        'msg' => $calculadora->suma(3,1)
+        'msg' => ""
     ];
     echo $helper->checkCode($data);
 });
