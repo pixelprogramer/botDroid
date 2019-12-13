@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PhpIncludePathManager">
-    <include_path>
-      <path value="$PROJECT_DIR$/php-backend/vendor/composer" />
-      <path value="$PROJECT_DIR$/php-backend/vendor/psr/simple-cache" />
-      <path value="$PROJECT_DIR$/php-backend/vendor/markbaker/matrix" />
-      <path value="$PROJECT_DIR$/php-backend/vendor/doctrine/lexer" />
-      <path value="$PROJECT_DIR$/php-backend/vendor/markbaker/complex" />
-      <path value="$PROJECT_DIR$/php-backend/vendor/firebase/php-jwt" />
-      <path value="$PROJECT_DIR$/php-backend/vendor/phpoffice/phpspreadsheet" />
-      <path value="$PROJECT_DIR$/php-backend/vendor/slim/slim" />
-      <path value="$PROJECT_DIR$/php-backend/vendor/tecnickcom/tcpdf" />
-      <path value="$PROJECT_DIR$/php-backend/vendor/symfony/yaml" />
-      <path value="$PROJECT_DIR$/php-backend/vendor/swiftmailer/swiftmailer" />
-      <path value="$PROJECT_DIR$/php-backend/vendor/egulias/email-validator" />
-    </include_path>
-  </component>
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="$PROJECT_DIR$/php-backend/vendor/autoload.php" />
