@@ -2,10 +2,11 @@
 $app->get('/holaMundo', function () use ($app) {
 
     $helper = new helper();
+    $calculadora = new calculadora();
     $data = [
         'status'=>'exitoso',
         'code' => '000',
-        'msg' => 'Hola mundo 123'
+        'msg' => $calculadora->suma(3,1)
     ];
     echo $helper->checkCode($data);
 });
@@ -41,8 +42,4 @@ $app->get('/holaMundoEulicer', function () use ($app) {
     echo $helper->checkCode($data);
 });
 
-class holaMundo {
-    public function suma($n,$b){
-        return $n+$b;
-    }
-}
+
