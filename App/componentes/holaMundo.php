@@ -40,3 +40,9 @@ $app->get('/holaMundoEulicer', function () use ($app) {
     ];
     echo $helper->checkCode($data);
 });
+
+class holaMundo {
+    public function suma($n,$b){
+        return $n+$b;
+    }
+}
