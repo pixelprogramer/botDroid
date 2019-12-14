@@ -14,4 +14,4 @@ if (!\defined('TEST_FILES_PATH')) {
 \ini_set('precision', '14');
 \ini_set('serialize_precision', '14');
 
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../index.php';
