@@ -2,7 +2,7 @@
 
 
 
-require 'App/componentes/calculadora.php';
+include_once 'App/componentes/calculadora.php';
 
 class holaMundoTest extends \PHPUnit\Framework\TestCase
 {
