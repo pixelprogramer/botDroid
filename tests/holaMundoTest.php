@@ -2,7 +2,7 @@
 
 
 
-include_once 'App/componentes/calculadora.php';
+require_once  __DIR__  .  ' /calculadora.php' ;
 
 class holaMundoTest extends \PHPUnit\Framework\TestCase
 {
