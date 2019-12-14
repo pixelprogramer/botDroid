@@ -2,7 +2,7 @@
 
 
 
-require_once  __DIR__  .  ' /calculadora.php' ;
+require_once './calculadora.php' ;
 
 class holaMundoTest extends \PHPUnit\Framework\TestCase
 {
