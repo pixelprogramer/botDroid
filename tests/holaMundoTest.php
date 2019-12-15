@@ -1,9 +1,5 @@
 <?php
 
-
-
-include './calculadora.php' ;
-
 class holaMundoTest extends \PHPUnit\Framework\TestCase
 {
     public function testSuma()
