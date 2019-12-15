@@ -2,7 +2,6 @@
 $app->get('/holaMundo', function () use ($app) {
 
     $helper = new helper();
-    $calculadora = new calculadora();
     $data = [
         'status'=>'exitoso',
         'code' => '000',

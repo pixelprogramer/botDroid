@@ -10,7 +10,7 @@ class conexPGSeguridad
     function __construct()
     {
         $config = Yaml::parseFile(__DIR__ . './../../Config/config.yml');
-        $this->validacionConexion = pg_connect("host=localhost dbname= user=postgres password= options='--client_encoding=UTF8'") or die('NO HAY CONEXION: ' . pg_last_error());
+        $this->validacionConexion = pg_connect("host=localhost dbname=botdorid user=postgres password=root options='--client_encoding=UTF8'") or die('NO HAY CONEXION: ' . pg_last_error());
         pg_client_encoding($this->validacionConexion);
     }
 

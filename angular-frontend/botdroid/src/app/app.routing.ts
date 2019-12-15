@@ -10,6 +10,7 @@ import {Routes, RouterModule} from "@angular/router";
 import {AppComponent} from "./app.component";
 import {LoginComponent} from "./login/login.component";
 import {PostComponent} from "./post/post.component";
+import {CreatePostComponent} from "./create-post/create-post.component";
 
 
 const appRoutes: Routes = [
@@ -17,6 +18,7 @@ const appRoutes: Routes = [
   {path: '', component: PostComponent, pathMatch: 'full'},
   {path:'login',component:LoginComponent},
   {path:'post',component:PostComponent},
+  {path:'crearPost',component:CreatePostComponent},
   {path: '**', component: AppComponent}
 
 

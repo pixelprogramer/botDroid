@@ -6,6 +6,8 @@ import {appRoutingProviders, routing} from "./app.routing";
 import { CreatePostComponent } from './create-post/create-post.component';
 import {LoginComponent} from "./login/login.component";
 import { PostComponent } from './post/post.component';
+import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,12 @@ import { PostComponent } from './post/post.component';
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    FormsModule,
+    BrowserModule,
+    routing,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

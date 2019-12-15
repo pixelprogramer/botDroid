@@ -12,13 +12,16 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" [routerLink]="'crearPost'">Crear post</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="'login'">Login</a>
+          <a class="nav-link" *ngIf="objUser== null && objUser == undefined" [routerLink]="'login'">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="objUser!= null && objUser != undefined" [routerLink]="'login'">{{objUser.nombre}}</a>
         </li>
       </ul>
     </div>
@@ -26,9 +29,4 @@
 </nav>
 <router-outlet></router-outlet>
 <!-- Footer -->
-<footer class="py-5 bg-dark">
-  <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-  </div>
-  <!-- /.container -->
-</footer>
+
