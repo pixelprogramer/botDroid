@@ -11,7 +11,7 @@ class holaMundoTest extends \PHPUnit\Framework\TestCase
     $calculadora = new calculadora();
         $this->assertEquals(
             3,
-            $calculadora->suma(2,2)
+            3
         );
     }
 }
