@@ -9,7 +9,6 @@ class conexPGSeguridad
         $this->validacionConexion = pg_connect("host=127.0.0.1 dbname=botdorid user=postgres password=root options='--client_encoding=UTF8'") or die('NO HAY CONEXION: ' . pg_last_error());
         pg_client_encoding($this->validacionConexion);
     }
-
     public function getConexion()
     {
         return $this->validacionConexion;
