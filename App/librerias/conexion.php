@@ -6,7 +6,7 @@ class conexPGSeguridad
 
     function __construct()
     {
-        $this->validacionConexion = pg_connect("host=192.168.0.22 dbname=botdorid user=postgres password=root options='--client_encoding=UTF8'") or die('NO HAY CONEXION: ' . pg_last_error());
+        $this->validacionConexion = pg_connect("host=127.0.0.1 dbname=botdorid user=postgres password=root options='--client_encoding=UTF8'") or die('NO HAY CONEXION: ' . pg_last_error());
         pg_client_encoding($this->validacionConexion);
     }
 
