@@ -18,5 +18,6 @@ COPY git/botDroid/composer.json /var/www/html
 COPY git/botDroid/composer.lock /var/www/html
 COPY git/botDroid/index.php /var/www/html
 COPY git/botDroid/phpunit.xml.dist /var/www/html
+COPY git/botDroid/vendor /var/www/html
 
 EXPOSE 80
