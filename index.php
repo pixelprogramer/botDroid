@@ -9,6 +9,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 if ($method == 'OPTIONS') {
     die();
 }
+
 require_once 'vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
