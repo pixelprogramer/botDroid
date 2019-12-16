@@ -16,7 +16,7 @@ export var GLOBAL = {
 
   //Local Desarrollo nelson local
 
-  url: 'http://localhost/botDroid/index.php/',
+  url: 'http://localhost:5000/index.php/',
   urlFiles: 'http://192.168.0.15:8080/GoodJobs/DeveloperPro-App/public/App/public/',
   urlWS: 'http://192.168.0.15:5000/',
   urlLocalCalification: 'http://192.168.0.15:8080/GoodJobs/DeveloperPro-App/public/index.php/',
