@@ -6,25 +6,23 @@ $app->post('/login', function () use ($app) {
     $usuario = $parametros->usuario;
     $contrasena = $parametros->contrasena;
     $helper = new helper();
+   /*
     $conexion = new conexPGSeguridad();
     $sql = "SELECT id, nombre, usuario, contrasena
 	FROM usuario where usuario='$usuario' and contrasena = '$contrasena';";
-    $r = $conexion->consultaComplejaNorAso($sql);
-    if ($r['usuario'] == $usuario && $contrasena == $r['contrasena']) {
+   */
+    $r = [
+        'nombre'=>'Nelson Andres Guerrero Moncada',
+        'usuario'=>$usuario,
+        'contrasena'=>$contrasena
+    ];
+
         $data = [
             'status' => 'exitoso',
             'code' => '00',
             'msg' => "Bienvenido",
             'data' => $r
         ];
-    } else {
-        $data = [
-            'status' => 'error',
-            'code' => '01',
-            'msg' => "",
-            'data' => $r
-        ];
-    }
 
     echo $helper->checkCode($data);
 });
@@ -37,15 +35,22 @@ $app->post('/crearPost', function () use ($app) {
     $contenido = $parametros->contenido;
     $id_usuario = $parametros->id_usuario;
     $helper = new helper();
-    $conexion = new conexPGSeguridad();
-    $sql = "INSERT INTO public.post(
+    //$conexion = new conexPGSeguridad();
+    /*$sql = "INSERT INTO public.post(
                 titulo, contenido, fecha_creacion, id_usuario)
                 VALUES ('$titulo', '$contenido', '$fecha_creacion', '$id_usuario');";
-    $conexion->consultaSimple($sql);
+    $conexion->consultaSimple($sql);*/
+    $r = [
+        'titulo'=>$titulo,
+        'contenido'=>$contenido,
+        'fecha_creacion'=>$fecha_creacion,
+        'nombre'=>'Nelson Andres Guerrero Moncada',
+    ];
     $data = [
         'status' => 'exitoso',
         'code' => '00',
-        'msg' => "Bienvenido",
+        'msg' => "Post creado de forma correcta",
+        'data'=>$r
     ];
     echo $helper->checkCode($data);
 });
