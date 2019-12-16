@@ -18,6 +18,7 @@ $yaml = new \Symfony\Component\Yaml\Yaml();
 
 define("SPECIALCONSTANT", true);
 //elementos
+
 require 'App/librerias/conexion.php';
 require 'App/servicios/jwtAuth.php';
 require 'App/servicios/helper.php';
