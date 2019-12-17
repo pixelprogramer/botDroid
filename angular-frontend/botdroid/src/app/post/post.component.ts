@@ -16,18 +16,9 @@ export class PostComponent implements OnInit {
   ngOnInit() {
   }
   listarPost() {
-    this.metodosServices.listPost().subscribe(
-      returned => {
-        if (returned.status == 'exitoso') {
-          if (returned.data.length > 0) {
-            this.listPost = returned.data;
-          } else {
-
-          }
-        }
-      }, error => {
-
-      }
-    )
+    if  (localStorage.getItem('listpost') != undefined && localStorage.getItem('listpost') != null)
+    {
+      this.listPost =JSON.parse(localStorage.getItem('listpost') );
+    }
   }
 }

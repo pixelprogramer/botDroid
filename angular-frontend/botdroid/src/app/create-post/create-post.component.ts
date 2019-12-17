@@ -24,11 +24,22 @@ export class CreatePostComponent implements OnInit {
   }
 
   crearPost() {
-    this.objPost.id_usuario = this.usuario['id'];
+    this.objPost.id_usuario = '1';
     this.metodosService.crearPost(this.objPost).subscribe(
       returned => {
         if (returned.status == 'exitoso') {
-this._Router.navigate(['post'])
+          var listPost = [];
+          if  (localStorage.getItem('listpost') != undefined && localStorage.getItem('listpost') != null)
+          {
+            listPost =JSON.parse(localStorage.getItem('listpost') );
+            listPost.push(returned.data);
+            localStorage.setItem('listpost',JSON.stringify(listPost));
+            console.log(listPost);
+          }else{
+            listPost.push(returned.data);
+            localStorage.setItem('listpost',JSON.stringify(listPost));
+          }
+         this._Router.navigate(['post']);
         }
       }, error => {
 
